@@ -1,0 +1,131 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, sans-serif;
+}
+
+.form {
+    width: 500px;
+    background-color:#e1fcfa;
+    border-radius: 20px;
+}
+
+.name {
+    border: none;
+    margin-bottom: 0;
+}
+
+.details {
+    border: none;
+}
+
+.form__item {
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-family: inherit;
+    margin: 20px auto;
+}
+
+.form__item:focus {
+    outline: none;
+}
+
+.form__item_el_surname {
+    margin-bottom: 0;
+}
+
+.form__label_el_surname {
+    font-size: 14px;
+    position: absolute;
+    top:81px;
+    left:25px;
+    transition: all 0.4s ease;
+    opacity: .8;
+}
+
+
+.form__item_el_surname:focus ~ .form__label_el_surname,
+.form__item_el_surname:not(:focus):valid ~ .form__label_el_surname {
+    transform: translate(-10px, -20px) scale(.6);
+}
+
+.form__item::placeholder {
+    transition: all 0.4s ease;
+    opacity: .8;
+}
+
+.form__item:focus::placeholder {
+    opacity: .3;
+}
+
+.form__item_el_description {
+    height: 150px;
+    padding: 0;
+    margin: 0;
+    resize: none;
+}
+
+.form__item::placeholder {
+    color: black;
+    position: relative;
+    margin-top: 0;
+}
+
+.form__delivery {
+    border: 0;
+    display: block;
+}
+
+.form__label_el_radio {
+    position: relative;
+    top: 7px;
+}
+
+.form__item_el_radio {
+    visibility: hidden;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.form__item_el_radio:before {
+    content: "\2606";
+    position: absolute;
+    visibility: visible;
+}
+
+.form__item_el_radio:checked:before {
+    content: "\2605";
+    position: absolute;
+    color: #128EDC;
+}
+
+
+.submit {
+    border: none;
+}
+
+.submit__item {
+    display: block;
+    margin: 0 0 0 300px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    width: 125px;
+    height: 25px;
+    /* background-color: #fbd9ff; */
+    background-color: #128EDC;
+    transition: all 0.4s ease;
+    color: white;
+}
+
+.submit__item:hover {
+    opacity: .6;
+    cursor: pointer;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+</head>
+
+<body>
+    <form class="form">
+        <fieldset class="name">
+            <label class="form__label" for="name"></label>
+            <input class="form__item form__item_el_name" type="text" id="name" name="name" placeholder="Name" required>
+
+            <input class="form__item form__item_el_surname" type="text" id="surname" required>
+            <label class="form__label form__label_el_surname" for="surname">Surname</label>
+        </fieldset>
+
+        <fieldset class="details">
+            <label class="form__label" for="description"></label>
+            <textarea class="form__item form__item_el_description" id="description" name="description"
+                placeholder="Description" required></textarea>
+        </fieldset>
+
+        <fieldset class="form__delivery">
+            <div class="option">
+                <input class="form__item_el_radio" type="radio" id="with-delivery" name="delivery" clicked>
+                <label class="form__label form__label_el_radio" for="with-delivery">With delivery</label>
+            </div>
+
+            <div class="option">
+                <input class="form__item_el_radio" type="radio" id="without-delivery" name="delivery">
+                <label class="form__label form__label_el_radio" for="without-delivery">Without delivery</label>
+            </div>
+        </fieldset>
+
+
+        <fieldset class="submit">
+            <label class="submit__label" for="submit"></label>
+            <input class="submit__item" type="submit" id="submit" name="submit" placeholder="Submit">
+        </fieldset>
+
+    </form>
+</body>
+
+
+
+</html>
