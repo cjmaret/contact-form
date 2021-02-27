@@ -8,28 +8,33 @@
 <body>
     <form class="form">
         <fieldset class="name">
-            <label class="form__label" for="name"></label>
-            <input class="form__item form__item_el_name" type="text" id="name" name="name" placeholder="Name" required>
+            <input class="form__item form__item_el_name" type="text" id="name" name="name" required>
+            <label class="form__label form__label_el_name" for="name">Name</label>
 
+            
             <input class="form__item form__item_el_surname" type="text" id="surname" required>
             <label class="form__label form__label_el_surname" for="surname">Surname</label>
         </fieldset>
 
         <fieldset class="details">
-            <label class="form__label" for="description"></label>
-            <textarea class="form__item form__item_el_description" id="description" name="description"
-                placeholder="Description" required></textarea>
+            <textarea class="form__item form__item_el_description" id="description" name="description" required></textarea>
+            <label class="form__label form__label_el_description" for="description">Description</label>
         </fieldset>
 
         <fieldset class="form__delivery">
             <div class="option">
-                <input class="form__item_el_radio" type="radio" id="with-delivery" name="delivery" clicked>
-                <label class="form__label form__label_el_radio" for="with-delivery">With delivery</label>
+
+                <label class="form__label form__label_el_radio" for="with-delivery">
+                    <input class="form__item_el_radio" type="radio" id="with-delivery" name="delivery" clicked>
+                    <span class="form__item_el_span">With delivery</span>
+                </label>
             </div>
 
             <div class="option">
-                <input class="form__item_el_radio" type="radio" id="without-delivery" name="delivery">
-                <label class="form__label form__label_el_radio" for="without-delivery">Without delivery</label>
+                <label class="form__label form__label_el_radio" for="without-delivery">
+                    <input class="form__item_el_radio" type="radio" id="without-delivery" name="delivery">
+                    <span class="form__item_el_span">Without delivery</span>
+                </label>
             </div>
         </fieldset>
 

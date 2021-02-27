@@ -39,6 +39,15 @@ body {
     margin-bottom: 0;
 }
 
+.form__label_el_name {
+    font-size: 14px;
+    position: absolute;
+    top:37px;
+    left:25px;
+    transition: all 0.4s ease;
+    opacity: .8;
+}
+
 .form__label_el_surname {
     font-size: 14px;
     position: absolute;
@@ -48,11 +57,31 @@ body {
     opacity: .8;
 }
 
+.form__label_el_description {
+    font-size: 14px;
+    position: absolute;
+    top:120px;
+    left:25px;
+    transition: all 0.4s ease;
+    opacity: .8;
+}
+
+.form__item_el_name:focus ~ .form__label_el_name,
+.form__item_el_name:not(:focus):valid ~ .form__label_el_name {
+    transform: translate(-5px, -20px) scale(.6);
+}
 
 .form__item_el_surname:focus ~ .form__label_el_surname,
 .form__item_el_surname:not(:focus):valid ~ .form__label_el_surname {
     transform: translate(-10px, -20px) scale(.6);
 }
+
+.form__item_el_description:focus ~ .form__label_el_description,
+.form__item_el_description:not(:focus):valid ~ .form__label_el_description {
+    transform: translate(-15px, -15px) scale(.6);
+}
+
+
 
 .form__item::placeholder {
     transition: all 0.4s ease;
@@ -68,6 +97,7 @@ body {
     padding: 0;
     margin: 0;
     resize: none;
+    margin-top: 5px;
 }
 
 .form__item::placeholder {
@@ -83,10 +113,15 @@ body {
 
 .form__label_el_radio {
     position: relative;
+}
+
+.form__item_el_span {
+    position: relative;
     top: 7px;
 }
 
 .form__item_el_radio {
+    top: 0;
     visibility: hidden;
     font-size: 18px;
     cursor: pointer;
